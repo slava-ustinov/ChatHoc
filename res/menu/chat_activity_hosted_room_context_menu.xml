@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_kick_user"
+        android:showAsAction="never"
+        android:title="@string/kick_user" 
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/action_ban_user"
+        android:showAsAction="never"
+        android:title="@string/ban_user" 
+        android:orderInCategory="2"/>
+
+
+</menu>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/action_clear_view"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/clear_display"/>
+    
+    <item 
+        android:id="@+id/action_clear_banned_users" 
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/clear_banned_users_in_room"/>
+
+    <item
+       android:id="@+id/action_close_room"
+       android:orderInCategory="3"
+       android:showAsAction="never"
+       android:title="@string/close_pub_chat_room"/>
+     
+
+</menu>

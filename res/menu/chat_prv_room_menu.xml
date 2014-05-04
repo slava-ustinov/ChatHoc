@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_clear_view"
+        android:orderInCategory="0"
+        android:showAsAction="never"
+        android:title="@string/clear_display"/>
+    
+     <item
+        android:id="@+id/action_ignore_user"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/ignore_this_user"/>
+     
+      <item
+        android:id="@+id/action_unignore_user"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/unginore_user"/>
+     
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
