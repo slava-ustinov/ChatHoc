@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_final_proj"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.android_final_proj.MainScreenActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android_final_proj.ChatSearchScreenFrag"
+            android:label="@string/title_activity_chat_search_screen_frag" 
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.example.android_final_proj.ChatHistoryScreenFrag"
+            android:label="@string/title_activity_chat_history_screen_frag"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.example.android_final_proj.QuickPrefsActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.example.android_final_proj.MainScreenActivity" >
+            
+                        <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android_final_proj.MainScreenActivity" />
+
+            >
+        </activity>
+
+        <service android:name="com.example.android_final_proj.LocalService" >
+        </service>
+        <activity
+            android:name="com.example.android_final_proj.ChatActivity"
+            android:label="@string/title_activity_chat"   
+            android:configChanges="orientation|screenSize"       
+            android:parentActivityName="com.example.android_final_proj.MainScreenActivity" >
+            
+                        <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android_final_proj.MainScreenActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android_final_proj.HistoryActivity"
+            android:label="@string/title_activity_history" 
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.example.android_final_proj.MainScreenActivity" >
+            
+                        <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android_final_proj.MainScreenActivity" />
+        </activity>
+    </application>
+
+</manifest>

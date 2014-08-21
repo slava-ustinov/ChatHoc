@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+
+	        <TextView
+	            android:id="@+id/search_list_item_TV1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            android:lines="1"
+	            android:textSize="25sp"
+	            android:textColor="@color/PurpleDark" >
+	            
+	        </TextView>
+	
+	        <TextView
+	            android:id="@+id/search_list_item_TV2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dip"
+	            android:lines="1"
+	            android:textSize="20sp" 
+	             android:textColor="@color/PurpleDark" >
+	        </TextView>
+    </LinearLayout>
+    
+      <ImageView
+        android:id="@+id/search_list_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/action_settings"
+        android:src="@drawable/private_chat_icon" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/search_list_item_icon"
+          android:layout_marginRight="-12dp"
+          android:layout_toLeftOf="@+id/search_list_item_icon"
+          android:orientation="vertical" >
+
+          <ImageView
+              android:id="@+id/search_list_item_new_msg_icon"
+              android:layout_width="wrap_content"
+              android:layout_height="27dp"
+              android:layout_gravity="right"
+              android:contentDescription="@string/action_settings" />
+
+          <RelativeLayout
+              android:id="@+id/relativeLayout3"
+              android:layout_width="98dp"
+              android:layout_height="wrap_content" >
+
+              <ImageView
+                  android:id="@+id/search_list_item_lock_icon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="27dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:contentDescription="@string/action_settings" />
+
+              <ImageView
+                  android:id="@+id/search_list_item_hosted_icon"
+                  android:layout_width="wrap_content"
+                  android:layout_height="27dp"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginRight="-20dp"
+                  android:layout_toLeftOf="@+id/search_list_item_lock_icon"
+                  android:contentDescription="@string/action_settings" />
+
+          </RelativeLayout>
+
+      </LinearLayout>
+
+</RelativeLayout>
